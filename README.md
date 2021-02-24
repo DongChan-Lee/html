@@ -1,5 +1,6 @@
 # HTML
 - 생활코딩 HTML 수업(https://opentutorials.org/course/3084) 을 통해 공부한 내용
+- HTML Tag Syntax 추가
 
 # JavaScript
 - 생활코딩 JavaScript 수업(https://opentutorials.org/course/3085) 을 통해 공부한 내용
