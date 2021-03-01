@@ -12,7 +12,8 @@
 8. ol (numbering) = Ordered List
 9. tr = table row(가로줄)
 10. td = table data(셀)
-
+11. th = table head(표의 제목)
+12. title = web page 제목
 
 
 # JavaScript
