@@ -15,3 +15,7 @@
 - i'mport를 활용한 무료 결제 시스템 api 연동 코드
 
 # AdminPage
+1. MySQL Database 구성
+2. MySQL Database에 데이터 입력
+3. PHP로 MySQL의 데이터 가져와서 Chart.js와 D3.js로 동적 그래프 그리기
+4. PHP로 MySQL DB의 내용을 Create, Read, Update, Delete(CRUD)할 수 있는 관리자 페이지 연동하기
