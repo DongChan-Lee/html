@@ -8,7 +8,7 @@
 
   - ## Carousel
     - Slick.js를 활용하여 웹페이지 상에서 캐러셀(동적으로 움직여 콘텐츠를 순환시킬 수 있는 슬라이드쇼) 구현하는 코드
-    - 결과 예시 :
+    - 결과 예시 : <img width="1052" alt="slick_example" src="https://user-images.githubusercontent.com/54230911/127171779-fef88556-55dd-40bc-8fe2-79115a6af146.png">
 
   - ## JoCoding
     - Youtube '조코딩' 채널을 통해 공부하고 실습한 내용
