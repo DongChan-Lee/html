@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel slick.js</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .slider {                 /* 캐러셀 있는 section */
+            width: 50%;
+            height: 50vh;
+            margin: 100px auto;
+            /* display: flex;
+            align-items: stretch; */
+        }
+        .slick-slide {            /* 캐러셀 안에 있는 슬라이드 간의 간격 */
+            margin: 0px 20px;
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+        .slick-slide img {
+            width: 300px;
+            margin: 0px auto;
+            height: 250px;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: black;
+        }
+        .slick-active, .slick-current {
+            opacity: 1;
+        }
+        .slider a:link, .slider a:visited {
+            text-decoration: none;
+            color: mediumblue;
+        }
+        .slider a:hover {
+            color: lightskyblue;
+        }
+        .slider a:active {
+            color: mediumblue;
+        }
+        table, section {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="slider">
+        <div>
+            <table>
+                <tr>
+                    <img src="images/2.jpg">
+                    <br>이곳에 설명을 넣을 수 있습니다.
+                </tr>
+                <tr>
+                    <td><input type="button" value="클릭1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크1</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크2</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <img src="images/3.jpg">
+                    <br>이곳에 설명을 넣을 수 있습니다.
+                </tr>
+                <tr>
+                    <td><input type="button" value="클릭1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크1</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크2</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <img src="images/4.jpg">
+                    <br>이곳에 설명을 넣을 수 있습니다.
+                </tr>
+                <tr>
+                    <td><input type="button" value="클릭1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크1</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크2</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <img src="images/5.png">
+                    <br>이곳에 설명을 넣을 수 있습니다.
+                </tr>
+                <tr>
+                    <td><input type="button" value="클릭1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크1</a>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <a href="http://www.naver.com" target="_blank">링크2</a>
+                    </td>
+                </tr> -->
+            </table>
+        </div>        
+    </section>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                infinity: false,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,     // 한번에 몇장의 슬라이드를 보이게 할건지
+                            slidesToScroll: 2,   // 한 턴에 몇 장의 슬라이드씩 넘길건지
+                            infinity: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
